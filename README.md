@@ -16,4 +16,4 @@ A la AirBnB Ruby Sinatra based web apps which have the following features:
   * Users cant book their own property
   * Users able to view their own property booking
  
-![Flow Diagram](http://goo.gl/BtQiHl)
+![Flow Diagram](http://postimg.org/image/z1jozh299)
