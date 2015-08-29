@@ -19,6 +19,10 @@ gem 'shotgun'
 
 gem 'byebug'
 
+gem 'rack-flash3'
+
+gem 'sinatra-redirect-with-flash'
+
 group :test do
   gem 'faker'
   gem 'rspec'

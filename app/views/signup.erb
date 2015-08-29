@@ -1,0 +1,48 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/home">Simple AirBnB</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <h2>Sign Up</h2><hr>
+  <div class="jumbotron">
+    <form role="form" class="form-signin" action='/signup' method='post'>
+
+    <% if !@errors.nil?%>
+      <% @errors.each do |error| %>
+      <%= error %>
+      <%end%>
+    <% end %><br>
+
+    <div class="form-group">
+    <!-- USER FIRST NAME -->
+    <label for="inputFName">First Name</label>
+    <input type="text" name="user[first_name]" class="form-control" id="firstName"  required>
+    </div>
+
+    <div class="form-group">
+    <!-- USER LAST NAME -->
+    <label for="inputLName">Last Name</label>
+    <input type="text" name="user[last_name]" class="form-control" id="lastName" required>
+    </div>
+
+    <div class="form-group">
+    <!-- USER EMAIL -->
+    <label for="inputEmail">Email address:</label>
+    <input type="email" name="user[email]" class="form-control" id="email" required>
+    </div>
+
+    <!-- USER PASSWORD -->
+    <div class="form-group">
+    <label for="inputPassword">Password:</label>
+    <input type="password" name="user[password]" class="form-control" id="password" required>
+    </div>
+
+    <br>
+    <button type="submit" class="btn btn-lg btn-primary btn-block">Sign Up</button>
+  </form>
+  </div>
+</div>
