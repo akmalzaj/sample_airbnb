@@ -5,18 +5,22 @@
     </div>
     <div>
       <ul class="nav navbar-nav">
-        <li><a href="/logout">LOGOUT</a></li>
+        <li class="active"><a href="/portal">Dashboard</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/logout"><span class="glyphicon glyphicon-off"></span> LOGOUT</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <div class="container-fluid">
-    <h1>Hi <%= @Fname %> <%= @Lname %>, Welcome To Your Dashboard</h1>
+    <h1 class="text-center">Hi <%= @Fname %> <%= @Lname %>, Welcome To Your Dashboard</h1>
     <hr>
-    <h3>What do you want to do?</h3><br>
-    <p><a href="#" class="btn btn-primary btn-lg">VIEW YOUR PROPERTY</a></p>
-    <p><a href="/new-property" class="btn btn-primary btn-lg">ADD NEW PROPERTY</a></p>
-    <p><a href="#" class="btn btn-primary btn-lg">LOOK FOR A PLACE TO STAY</a></p>
+    <h3 class="text-center">What do you want to do?</h3><br>
+    <p class="text-center"><a href="/view-property" class="btn btn-primary btn-lg">VIEW YOUR PROPERTY</a></p>
+    <p class="text-center"><a href="/new-property" class="btn btn-primary btn-lg">ADD NEW PROPERTY</a></p>
+    <p class="text-center"><a href="#" class="btn btn-primary btn-lg">LOOK FOR A PLACE TO STAY</a></p>
 
 </div>
+

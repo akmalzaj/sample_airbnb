@@ -2,21 +2,12 @@
   margin: 20px auto;
   width: 600px;
   padding: 0px 20px 20px 20px;
-  text-align: center;
+  border: 1px groove blue;
+  font-size: .9em;
+  line-height: 1.5em;
 }
 
-.notice { color: green; }
-.error { color: red; }
-
-/* centered columns styles */
-.row-centered {
-    text-align:center;
-}
-.col-centered {
-    display:inline-block;
-    float:none;
-    /* reset the text-align */
-    text-align:left;
-    /* inline-block space fix */
-    margin-right:-4px;
+.center {
+    margin: 0 auto;
+    width: 80%;
 }

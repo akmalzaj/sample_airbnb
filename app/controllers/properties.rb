@@ -6,11 +6,14 @@ post '/add-new-property' do
 	current_user
 	@property = Property.create(params[:property])
 	@tag = Tag.create(params[:tag])
-	# byebug
-	# @tag_array = @tag.split("/\W+/")
-	erb :portal, :notice =>'Successfully Adding New Property'
+	erb :portal
 end
 
+get '/view-property' do
+	# @list_property = Property.find(all)
+	current_user
+	erb :viewProperty
+end
 # post '/new_property' do
   
 #   current_user
